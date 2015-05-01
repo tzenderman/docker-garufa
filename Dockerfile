@@ -1,7 +1,6 @@
 FROM tzenderman/docker-rvm
 
 # Install system libraries.
-COPY conf/server_dependencies.txt /code/server_dependencies.txt
 RUN apt-get update && \
     apt-get install -y python-software-properties && \
     add-apt-repository ppa:nginx/stable && \
