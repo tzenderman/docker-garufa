@@ -1,0 +1,52 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.6)
+    async-rack (0.5.1)
+      rack (~> 1.1)
+    cuba (3.1.1)
+      rack
+    em-synchrony (1.0.4)
+      eventmachine (>= 1.0.0.beta.1)
+    em-websocket (0.3.8)
+      addressable (>= 2.1.1)
+      eventmachine (>= 0.12.9)
+    eventmachine (1.0.4)
+    faye-websocket (0.7.4)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.3.1)
+    garufa (1.1.0.rc.1)
+      cuba (= 3.1.1)
+      faye-websocket (= 0.7.4)
+      goliath (= 1.0.4)
+      signature (= 0.1.7)
+    goliath (1.0.4)
+      async-rack
+      em-synchrony (>= 1.0.0)
+      em-websocket (= 0.3.8)
+      eventmachine (>= 1.0.0.beta.4)
+      http_parser.rb (= 0.6.0)
+      log4r
+      multi_json
+      rack (>= 1.2.2)
+      rack-contrib
+      rack-respond_to
+    http_parser.rb (0.6.0)
+    log4r (1.1.10)
+    multi_json (1.10.1)
+    rack (1.6.0)
+    rack-accept-media-types (0.9)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
+    rack-respond_to (0.9.8)
+      rack-accept-media-types (>= 0.6)
+    signature (0.1.7)
+    websocket-driver (0.5.1)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  garufa (= 1.1.0.rc.1)

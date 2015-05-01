@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+APP_ID=${GARUFA_APP_ID:=1}
+APP_KEY=${GARUFA_APP_KEY:=abc12345678}
+SECRET=${GARUFA_SECRET:=12345678abc}
+
+# Start nginx.
+service nginx start
+
+# Start Garufa
+/bin/bash -lc "garufa -sv --address 127.0.0.1 --port 8080 --app_id $APP_ID --app_key $APP_KEY --secret $SECRET"
+
