@@ -1,4 +1,5 @@
-# Docker Image for running Garufa websocket server (https://github.com/Juanmcuello/garufa)
+# Docker Image for Garufa Websocket Server
+See: https://github.com/Juanmcuello/garufa
 
 ![tzenderman/docker-garufa](http://dockeri.co/image/tzenderman/docker-garufa)
 
