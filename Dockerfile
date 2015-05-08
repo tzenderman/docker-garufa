@@ -25,6 +25,9 @@ RUN rm -f /etc/nginx/nginx.conf && \
     ln -s /code/nginx.conf /etc/nginx/nginx.conf && \
     ln -s /code/local.ngx /etc/nginx/sites-enabled/local.ngx
 
+# Define mountable directories.
+VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/ssl"]
+
 EXPOSE 80
 EXPOSE 443
 
